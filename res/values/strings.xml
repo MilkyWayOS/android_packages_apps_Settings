@@ -12633,4 +12633,11 @@
     <string name="content_protection_preference_subpage_summary"></string>
     <!-- Default information at the bottom of the subpage of content protection settings. Will be overlaid by OEM. -->
     <string name="content_protection_preference_subpage_info"></string>
+    <!-- Describes what is affected by the camera or mic toggle [CHAR LIMIT=NONE] -->
+    <string name="sensor_toggle_description">For all apps and services</string>
+
+    <!-- Title for Game settings entry. [CHAR_LIMIT=NONE] -->
+    <string name="game_settings_title">Game settings</string>
+    <!-- Summary for Game settings entry. [CHAR_LIMIT=NONE] -->
+    <string name="game_settings_summary">Enhance your gaming experience</string>
 </resources>
