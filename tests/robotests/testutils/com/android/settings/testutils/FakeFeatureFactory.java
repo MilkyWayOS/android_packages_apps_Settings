@@ -23,9 +23,6 @@ import com.android.settings.accessibility.AccessibilityMetricsFeatureProvider;
 import com.android.settings.accessibility.AccessibilitySearchFeatureProvider;
 import com.android.settings.accounts.AccountFeatureProvider;
 import com.android.settings.applications.ApplicationFeatureProvider;
-import com.android.settings.applications.GameSettingsFeatureProvider;
-import com.android.settings.applications.appinfo.ExtraAppInfoFeatureProvider;
-import com.android.settings.aware.AwareFeatureProvider;
 import com.android.settings.biometrics.face.FaceFeatureProvider;
 import com.android.settings.biometrics.fingerprint.FingerprintFeatureProvider;
 import com.android.settings.biometrics2.factory.BiometricsRepositoryProvider;
@@ -104,7 +101,6 @@ public class FakeFeatureFactory extends FeatureFactory {
     public OnboardingFeatureProvider mOnboardingFeatureProvider;
     public FastPairFeatureProvider mFastPairFeatureProvider;
     public PrivateSpaceLoginFeatureProvider mPrivateSpaceLoginFeatureProvider;
-    public GameSettingsFeatureProvider gameSettingsFeatureProvider;
 
     /**
      * Call this in {@code @Before} method of the test class to use fake factory.
@@ -153,7 +149,6 @@ public class FakeFeatureFactory extends FeatureFactory {
         mOnboardingFeatureProvider = mock(OnboardingFeatureProvider.class);
         mFastPairFeatureProvider = mock(FastPairFeatureProvider.class);
         mPrivateSpaceLoginFeatureProvider =  mock(PrivateSpaceLoginFeatureProvider.class);
-        gameSettingsFeatureProvider = mock(GameSettingsFeatureProvider.class);
     }
 
     @Override
@@ -335,9 +330,6 @@ public class FakeFeatureFactory extends FeatureFactory {
     @Override
     public PrivateSpaceLoginFeatureProvider getPrivateSpaceLoginFeatureProvider() {
         return mPrivateSpaceLoginFeatureProvider;
-    
-    public GameSettingsFeatureProvider getGameSettingsFeatureProvider() {
-        return gameSettingsFeatureProvider;
     }
 }
 
